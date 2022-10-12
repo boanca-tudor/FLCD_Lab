@@ -1,0 +1,23 @@
+func isPrime(n1: Int) : Boolean [
+    if n1 < 2 [
+        return false;
+    ]
+    if n1 == 2 [
+        return true;
+    ]
+    if n1 % 2 == 0 [
+        return false;
+    ]
+
+    for (d: Int = 3; d * d <= n1; d += 2) [
+        if n1 % d == 0 [
+            return false;
+        ]
+    ]
+    
+    return true;
+]
+
+func main() [
+    write(isPrime(51));
+]

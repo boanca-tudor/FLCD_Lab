@@ -1,0 +1,16 @@
+// error is that arrays should be defined with <>, not {}
+func sumArray(array: Int{}) : Int [
+    sum : Int;
+    sum = 0;
+    
+    for (i: Int = 0; i < getLength(array); i++) [
+        sum += array<i>;
+    ]
+    
+    return sum;
+]
+
+// functions are defined using func, not funct
+funct main() [
+    write(sumArray(<1, 2, 3, 4>));
+]

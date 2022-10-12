@@ -1,0 +1,14 @@
+func sumArray(array: Int<>) : Int [
+    sum : Int;
+    sum = 0;
+    
+    for (i: Int = 0; i < getLength(array); i++) [
+        sum += array<i>;
+    ]
+    
+    return sum;
+]
+
+func main() [
+    write(sumArray(<1, 2, 3, 4>));
+]
