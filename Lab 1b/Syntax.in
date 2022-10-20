@@ -13,7 +13,7 @@ Syntax:
 	
 	primitive_type ::= "Int" | "Char" | "Double" | "String" | "Boolean"
 	
-	array_type ::= primitive_type "<" nr ">"
+	array_type ::= primitive_type "<" no ">"
 	
 	type ::= primitive_type | array_type
 	
