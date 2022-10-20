@@ -1,0 +1,20 @@
+1. Symbol Table
+    - contains 2 hash tables, one for constants and the other for identifiers
+    - has 4 methods:
+        - insert_identifier(new_element) - inserts new_element into the identifier hash table
+                                       - only works if new_element is a string
+        - insert_constant(new_element) - inserts new_element into the constants hash table
+                                       - works for both integers and strings
+        - has_identifier(element) - checks if the element is in the identifiers table
+        - has_constant(element) - checks if the element is in the constants table
+
+2. Hash Table
+    - contains a list with 4096 elements, initialized with None
+    - the hash function is - sum(ascii code of every character) % size, if the element is a string
+                           - element % size, if the element is an integer
+    - has 3 methods:
+        - insert(new_element) - computes the hash and adds the element to a list on the position of the hash
+                              - if the element is already there, does nothing
+        - get_index(element) - returns the position of the element in the list corresponding to its hash
+                             - returns None if there is no list corresponding to its hash or it's not in the list
+        - has_element(element) - returns True if the element is in the table, False otherwise
