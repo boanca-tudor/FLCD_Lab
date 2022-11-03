@@ -1,0 +1,23 @@
+1. PIF
+	- uses 2 arrays, one of (token, position into the symbol table) pairs, the other for token types
+	- 2 methods:
+		- add(element, type) - adds an element into the PIF
+							 - element should be a pair of (token, position into the symbol table)
+							 - type should be a string representing the type of the symbol
+							 
+2. Scanner
+	- has a symbol table and a PIF
+	- imports the tokens from a file and separates them into operators, delimiters and reserved words
+	- has 2 main methods:
+		- split_file(file_path) - file_path is a string containing the path to the file to be tokenized
+								- takes the input of the file and returns a list of tokens from it
+								
+		- scan(file_path) - file_path is a string containing the path to the file to be parsed
+						  - first splits the input of the file into tokens, then tries to classify them using regex
+						  - if the token is either an operator, delimiter or reserved word, a pair of type (token, -1) is added to the PIF, along with the type of the token
+						  - otherwise, it tries to class the tokens into either identifiers, numerical constants, string constants or char constants
+						  - in case the token is an identifier, first it checks if it's already in the symbol table; if it is, then a pair of type (token, position into symbol table)
+						  is added to the PIF; otherwise, it adds the identifier to the symbol table, then adds the entry to the PIF
+						  - in case the token is a constant, the same steps as for the identifier are executed
+						  - at the end, if no lexical errors are found, it prints a message and it generates output files for both PIF and the Symbol Table
+						  - in case lexical errors are found, errors are displayed

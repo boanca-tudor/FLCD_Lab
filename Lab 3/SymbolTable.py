@@ -28,10 +28,10 @@ class SymbolTable:
         return self.__constants.has_element(element)
 
     def get_identifier_position(self, element):
-        return self.__identifiers.get_hash(element)
+        return self.__identifiers.get_hash(element), self.__identifiers.get_index(element)
 
     def get_constant_position(self, element):
-        return self.__constants.get_hash(element)
+        return self.__constants.get_hash(element), self.__constants.get_index(element)
 
     def __str__(self):
         string = ""

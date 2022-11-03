@@ -110,6 +110,8 @@ class Scanner:
                 print("Lexical error at token : " + token)
                 return
 
+        print("Lexically correct!")
+
         pif_file = open("PIF.out", "w")
         pif_file.write("PIF : \n")
         pif_file.write(str(self.__pif))

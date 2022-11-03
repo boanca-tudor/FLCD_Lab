@@ -11,7 +11,7 @@ class PIF:
         string = ""
 
         for i in range(len(self.__tokens)):
-            string = string + str(self.__tokens[i][0]) + " - " + str(self.__tokens[i][1]) + " -> "
+            string = string + str(self.__tokens[i][0]) + " -> " + str(self.__tokens[i][1]) + " - type: "
             string = string + str(self.__type[i]) + "\n"
 
         return string

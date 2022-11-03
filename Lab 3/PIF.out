@@ -1,47 +1,47 @@
 PIF : 
-start - -1 -> reserved word
-variable - -1 -> reserved word
-n1 - 159 -> identifier
-: - -1 -> separator
-Int - -1 -> reserved word
-, - -1 -> separator
-n2 - 160 -> identifier
-: - -1 -> separator
-Int - -1 -> reserved word
-; - -1 -> separator
-constant - -1 -> reserved word
-c2 - 149 -> identifier
-: - -1 -> separator
-Char - -1 -> reserved word
-= - -1 -> operator
-a - 97 -> constant
-; - -1 -> separator
-n1 - 159 -> identifier
-= - -1 -> operator
-2 - 2 -> constant
-; - -1 -> separator
-n2 - 160 -> identifier
-= - -1 -> operator
-3 - 3 -> constant
-; - -1 -> separator
-if - -1 -> reserved word
-n1 - 159 -> identifier
-> - -1 -> operator
-n2 - 160 -> identifier
-[ - -1 -> separator
-write - -1 -> reserved word
-( - -1 -> separator
-n1 - 159 -> identifier
-) - -1 -> separator
-; - -1 -> separator
-] - -1 -> separator
-else - -1 -> reserved word
-[ - -1 -> separator
-write - -1 -> reserved word
-( - -1 -> separator
-n2 - 160 -> identifier
-) - -1 -> separator
-; - -1 -> separator
-] - -1 -> separator
-; - -1 -> separator
-end - -1 -> reserved word
+start -> -1 - type: reserved word
+variable -> -1 - type: reserved word
+n1 -> (159, 0) - type: identifier
+: -> -1 - type: separator
+Int -> -1 - type: reserved word
+, -> -1 - type: separator
+n2 -> (160, 0) - type: identifier
+: -> -1 - type: separator
+Int -> -1 - type: reserved word
+; -> -1 - type: separator
+constant -> -1 - type: reserved word
+c2 -> (149, 0) - type: identifier
+: -> -1 - type: separator
+Char -> -1 - type: reserved word
+= -> -1 - type: operator
+a -> (97, 0) - type: constant
+; -> -1 - type: separator
+n1 -> (159, 0) - type: identifier
+= -> -1 - type: operator
+2 -> (2, 0) - type: constant
+; -> -1 - type: separator
+n2 -> (160, 0) - type: identifier
+= -> -1 - type: operator
+3 -> (3, 0) - type: constant
+; -> -1 - type: separator
+if -> -1 - type: reserved word
+n1 -> (159, 0) - type: identifier
+> -> -1 - type: operator
+n2 -> (160, 0) - type: identifier
+[ -> -1 - type: separator
+write -> -1 - type: reserved word
+( -> -1 - type: separator
+n1 -> (159, 0) - type: identifier
+) -> -1 - type: separator
+; -> -1 - type: separator
+] -> -1 - type: separator
+else -> -1 - type: reserved word
+[ -> -1 - type: separator
+write -> -1 - type: reserved word
+( -> -1 - type: separator
+n2 -> (160, 0) - type: identifier
+) -> -1 - type: separator
+; -> -1 - type: separator
+] -> -1 - type: separator
+; -> -1 - type: separator
+end -> -1 - type: reserved word
