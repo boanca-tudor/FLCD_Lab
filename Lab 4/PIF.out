@@ -1,0 +1,47 @@
+PIF : 
+start -> -1 - type: reserved word
+variable -> -1 - type: reserved word
+n1 -> (159, 0) - type: identifier
+: -> -1 - type: separator
+Int -> -1 - type: reserved word
+, -> -1 - type: separator
+n2 -> (160, 0) - type: identifier
+: -> -1 - type: separator
+Int -> -1 - type: reserved word
+; -> -1 - type: separator
+constant -> -1 - type: reserved word
+c2 -> (149, 0) - type: identifier
+: -> -1 - type: separator
+Char -> -1 - type: reserved word
+= -> -1 - type: operator
+a -> (97, 0) - type: constant
+; -> -1 - type: separator
+n1 -> (159, 0) - type: identifier
+= -> -1 - type: operator
+2 -> (2, 0) - type: constant
+; -> -1 - type: separator
+n2 -> (160, 0) - type: identifier
+= -> -1 - type: operator
+3 -> (3, 0) - type: constant
+; -> -1 - type: separator
+if -> -1 - type: reserved word
+n1 -> (159, 0) - type: identifier
+> -> -1 - type: operator
+n2 -> (160, 0) - type: identifier
+[ -> -1 - type: separator
+write -> -1 - type: reserved word
+( -> -1 - type: separator
+n1 -> (159, 0) - type: identifier
+) -> -1 - type: separator
+; -> -1 - type: separator
+] -> -1 - type: separator
+else -> -1 - type: reserved word
+[ -> -1 - type: separator
+write -> -1 - type: reserved word
+( -> -1 - type: separator
+n2 -> (160, 0) - type: identifier
+) -> -1 - type: separator
+; -> -1 - type: separator
+] -> -1 - type: separator
+; -> -1 - type: separator
+end -> -1 - type: reserved word

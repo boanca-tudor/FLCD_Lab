@@ -1,0 +1,23 @@
+FiniteAutomata - represents a M = (Q,Σ,δ,p,F) finite automata
+
+The class reads the contents of the automata from a file upon creation using the read_from_file method.
+The input file must contain in this order:
+    - all the states
+    - the alphabet
+    - all transitions
+    - all possible final states
+
+The main method of this class is accepts(sequence) - sequence is the sequence to be checked by the automata
+                                                   - returns false if the automata is not deterministic,
+                                                   we reach a character which has no transition or
+                                                   if the sequence is not accepted
+                                                   (there is no way to reach the next character in the sequence)
+                                                   - returns true otherwise
+
+Structure of the FA.in input file:
+    states = [state ","] state
+    alphabet = [character ","] character
+    transitions = [transition ","] transition
+    transition = state "-" terminal "-" state
+    final_states = [state ","] state
+    FA = states "\n" alphabet "\n" transitions "\n" final_states
