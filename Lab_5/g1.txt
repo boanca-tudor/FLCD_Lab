@@ -1,0 +1,23 @@
+program iostmt structstmt ifstmt whilestmt RELATION condition decllist declaration type1 arraydecl cmpdstmt stmtlist stmt simplstmt assignstmt expression term factor
+VAR ; . : BOOLEAN CHAR INTEGER REAL ARRAY [ ] OF BEGIN END := + * ( ) READ WRITE IF THEN ELSE WHILE DO < <= = <> >= > A B C D E F G H I K L M N O P Q R S T V X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z 1 2 3 4 5 6 7 8 9 0
+program
+program ::= "VAR" decllist ";" cmpdstmt "."
+decllist ::= declaration | declaration ";" decllist
+declaration ::= IDENTIFIER ":" type
+type1 ::= "BOOLEAN" | "CHAR" | "INTEGER" | "REAL"
+arraydecl ::= "ARRAY" "[" nr "]" "OF" type1
+type ::= type1|arraydecl
+cmpdstmt ::= "BEGIN" stmtlist "END"
+stmtlist ::= stmt | stmt ";" stmtlist
+stmt ::= simplstmt | structstmt
+simplstmt ::= assignstmt | iostmt
+assignstmt ::= IDENTIFIER ":=" expression
+expression ::= expression "+" term | term
+term ::= term "*" factor | factor
+factor ::= "(" expression ")" | IDENTIFIER
+iostmt ::= "READ" | "WRITE" "(" IDENTIFIER ")"
+structstmt ::= cmpdstmt | ifstmt | whilestmt
+ifstmt ::= "IF" condition "THEN" stmt ["ELSE" stmt]
+whilestmt ::= "WHILE" condition "DO" stmt
+condition ::= expression RELATION expression
+RELATION ::= "<" | "<=" | "=" | "<>" | ">=" | ">"
