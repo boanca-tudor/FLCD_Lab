@@ -1,0 +1,26 @@
+program assignstmt identifier rest_of_identifier small_letter big_letter number expression term factor condition RELATION ifstmt iostmt whilestmt compound_statement declaration simple_declaration type identifier array_declaration statement simplstmt structstmt
+{ } integer string boolean array [ ] ; if elif else while = + - * / ( ) _ input_integer input_string print < <= == > >= > A O N A B C D E F G H I K L M N O P Q R S T V X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z 1 2 3 4 5 6 7 8 9 0
+program
+program ::= "{" compound_statement "}"
+declaration ::= simple_declaration | array_declaration
+simple_declaration ::= type " " identifier
+type ::= "integer" | "string" | "boolean"
+array_declaration ::= "array" "[" type "]" identifier
+identifier ::= small_letter | small_letter rest_of_identifier
+rest_of_identifier ::= small_letter | big_letter | "_" | number | rest_of_identifier
+small_letter ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+big_letter ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "V" | "X" | "Y" | "Z"
+number ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+compound_statement ::= statement ";" | statement ";" compound_statement
+statement ::= simplstmt | structstmt
+simplstmt ::= assignstmt | iostmt | declaration
+structstmt ::= compound_statement | ifstmt | whilestmt
+ifstmt ::= "if" condition statement | "if" condition statement "else" statement
+whilestmt ::= "while" condition statement
+assignstmt ::= identifier "=" expression
+expression ::= expression "+" term | expression "-" term | term
+term ::= term "*" factor | term "/" factor | factor
+factor ::= "(" expression ")" | identifier | constant
+iostmt ::= "input_integer" "(" identifier ")" | "input_string" "(" identifier ")" | "print" "(" identifier ")" | "print" "(" constant ")"
+condition ::= "(" expression RELATION expression ")"
+RELATION ::= "<" | "<=" | "==" | ">" | ">=" | ">" | "A" | "O" | "N"
