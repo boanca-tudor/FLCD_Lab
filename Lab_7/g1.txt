@@ -1,0 +1,6 @@
+S A B
+a b c d
+S
+S ::= A B
+A ::= "c" | "a" A
+B ::= "d" | "b" B

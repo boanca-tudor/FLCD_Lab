@@ -1,0 +1,1690 @@
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C', 'D', '*']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'S', '(']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'S']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B', '+']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$', ')', ')', 'a', '(', 'a', '(']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', ')', ')', 'a', '(', 'a', '(']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', ')', ')', 'a', '(', 'a', '(']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', ')', ')', 'a', '(', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'S', '(']
+production string:
+[1, 4, 7]
+
+
+input stack:
+['$', ')', ')', 'a', '(', 'a']
+work stack:
+['$', 'A', 'C', ')', 'S']
+production string:
+[1, 4, 7]
+
+
+input stack:
+['$', ')', ')', 'a', '(', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 7, 1]
+
+
+input stack:
+['$', ')', ')', 'a', '(', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 7, 1, 4]
+
+
+input stack:
+['$', ')', ')', 'a', '(', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 7, 1, 4, 8]
+
+
+ERROR AT SYMBOL: (
+input stack:
+['$', ')', 'a', '(']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', ')', 'a', '(']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', ')', 'a', '(']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', ')', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'S', '(']
+production string:
+[1, 4, 7]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'S']
+production string:
+[1, 4, 7]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 7, 1]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 7, 1, 4]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 7, 1, 4, 8, 6]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')']
+production string:
+[1, 4, 7, 1, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 7, 1, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 7, 1, 4, 8, 6, 3, 6]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 7, 1, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 7, 1, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$', 'f', 'e', 'd', 'c']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+ERROR AT SYMBOL: c
+input stack:
+['$', 'a', '+', 'a', '*', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', 'a', '+', 'a', '*', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', 'a', '+', 'a', '*', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', 'a', '+', 'a', '*', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', 'a', '+', 'a', '*']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', 'a', '+', 'a', '*']
+work stack:
+['$', 'A', 'C', 'D', '*']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 8]
+
+
+input stack:
+['$', 'a', '+']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 8]
+
+
+input stack:
+['$', 'a', '+']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 8, 6]
+
+
+input stack:
+['$', 'a', '+']
+work stack:
+['$', 'A', 'B', '+']
+production string:
+[1, 4, 8, 5, 8, 6, 2]
+
+
+input stack:
+['$', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1, 4, 8, 5, 8, 6, 2]
+
+
+input stack:
+['$', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4]
+
+
+input stack:
+['$', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8, 6]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '*', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '*', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '*', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '*', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '*']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '*']
+work stack:
+['$', 'A', 'C', 'D', '*']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 8, 6]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'B', '+']
+production string:
+[1, 4, 8, 5, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1, 4, 8, 5, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8, 6]
+
+
+input stack:
+['$', ')']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 8, 6, 2, 4, 8, 6, 3]
+
+
+ERROR AT SYMBOL: )
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C', 'D', '*']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'S', '(']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'S']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B', '+']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$', 'a', 'a', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', 'a', 'a', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', 'a', 'a', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', 'a', 'a', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', 'a', 'a']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8]
+
+
+ERROR AT SYMBOL: a
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C', 'D', '*']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'S', '(']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'S']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B', '+']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D', '*']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'S', '(']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'S']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4]
+
+
+input stack:
+['$', ')', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6]
+
+
+input stack:
+['$', ')', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'B', '+']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4]
+
+
+input stack:
+['$', ')', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6]
+
+
+input stack:
+['$', ')', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', ')']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3, 6]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3, 6, 3]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C', 'D', '*']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'S', '(']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'S']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B', '+']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'B']
+production string:
+[1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*', 'a']
+work stack:
+['$', 'A', 'C', 'a']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(', '*']
+work stack:
+['$', 'A', 'C', 'D', '*']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5]
+
+
+input stack:
+['$', ')', 'a', '+', 'a', '(']
+work stack:
+['$', 'A', 'C', ')', 'S', '(']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'S']
+production string:
+[1, 4, 8, 5, 7]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4]
+
+
+input stack:
+['$', ')', 'a', '+', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6]
+
+
+input stack:
+['$', ')', 'a', '+']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B', '+']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'B']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'D']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4]
+
+
+input stack:
+['$', ')', 'a']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C', 'a']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6]
+
+
+input stack:
+['$', ')']
+work stack:
+['$', 'A', 'C', ')']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A', 'C']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$', 'A']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 4, 8, 5, 7, 1, 4, 8, 6, 2, 4, 8, 6, 3, 6, 3]
+
+
+Parse tree with father-sibling relation:
+info | value | father | right sibling
+1 S 0 0
+2 B 1 3
+3 A 1 0
+4 D 2 5
+5 C 2 6
+6 "epsilon" 3 0
+7 "a" 4 8
+8 "*" 5 9
+9 D 5 10
+10 C 5 0
+11 "(" 9 12
+12 S 9 13
+13 ")" 9 14
+14 "epsilon" 10 0
+15 B 12 16
+16 A 12 0
+17 D 15 18
+18 C 15 19
+19 "+" 16 20
+20 B 16 21
+21 A 16 0
+22 "a" 17 23
+23 "epsilon" 18 0
+24 D 20 25
+25 C 20 26
+26 "epsilon" 21 0
+27 "a" 24 28
+28 "epsilon" 25 0

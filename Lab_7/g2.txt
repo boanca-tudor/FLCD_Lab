@@ -1,0 +1,25 @@
+program assignstmt expression arithmetic1 arithmetic2 multiply1 AUX5 AUX4 multiply2 AUX1 AUX2 AUX3 condition RELATION ifstmt iostmt whilestmt compound_statement declaration simple_declaration type array_declaration statement simplstmt structstmt
+{ } integer string boolean array epsilon [ ] ; if elif else while = + - * / ( ) _ input_integer identifier constant input_string print < <= == > >= > A O N A B C D E F G H I K L M N O P Q R S T V X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z 1 2 3 4 5 6 7 8 9 0
+program
+program ::= "{" compound_statement "}"
+compound_statement ::= statement AUX1
+AUX1 ::= "epsilon" | compound_statement
+statement ::= simplstmt | structstmt
+simplstmt ::= assignstmt ";" | iostmt ";" | declaration ";"
+structstmt ::= ifstmt | whilestmt
+ifstmt ::= "if" condition "{" compound_statement "}"
+whilestmt ::= "while" condition statement
+assignstmt ::= "identifier" "=" AUX4
+AUX4 ::= "identifier" | "constant" | expression
+iostmt ::= "input_integer" "(" "identifier" ")" | "input_string" "(" "identifier" ")" | "print" "(" "identifier" ")" | "print" "(" "constant" ")"
+declaration ::= simple_declaration | array_declaration
+simple_declaration ::= type " " "identifier"
+type ::= "integer" | "string" | "boolean"
+array_declaration ::= "array" "[" type "]" "identifier"
+expression ::= arithmetic2 arithmetic1 | "identifier"
+arithmetic1 ::= "+" arithmetic2 arithmetic1 | "-" arithmetic2 arithmetic1 | "epsilon"
+arithmetic2 ::= multiply2 multiply1
+multiply1 ::= "*" multiply2 multiply1 | "/" multiply2 multiply1 | "epsilon"
+multiply2 ::= "(" expression ")" | "identifier" | "constant"
+condition ::= "(" expression RELATION expression ")"
+RELATION ::= "<" | "<=" | "==" | ">" | ">=" | "A" | "O" | "N"

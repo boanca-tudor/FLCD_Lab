@@ -1,0 +1,26 @@
+program decllist declaration constant_decllist constant_declaration const primitive_type array_type type stmtlist stmt assignstmt expression arithmetic_expression term factor iostmt ifstmt loopstmt relational_expression logical_expression logical_op relational_op
++ - * / % = ! && || == != < <= > >= , [ ] < > ( ) : ;   \n if else while start end Int Char String Boolean variable constant write read " ' a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9
+program
+program ::= "start" ["variable" decllist ";"] ["constant" constant_decllist ";"] [stmtlist] "end"
+decllist ::= declaration | declaration "," decllist
+declaration ::= identifier ":" type
+constant_decllist ::= constant_declaration | constant_declaration "," constant_decllist
+constant_declaration ::= identifier ":" type "=" const
+const ::= noconst | character | constchar | boolconst
+primitive_type ::= "Int" | "Char" | "Double" | "String" | "Boolean"
+array_type ::= primitive_type "<" no ">"
+type ::= primitive_type | array_type
+stmtlist ::= stmt | stmt ";" stmtlist
+stmt ::= assignstmt | iostmt | ifstmt | loopstmt
+assignstmt ::= identifier "=" expression | identifier "=" const
+expression ::= arithmetic_expression | logical_expression | relational_expression
+arithmetic_expression ::= arithmetic_expression "+" term | arithmetic_expression "-" term | term
+term ::= term "*" factor | term "/" factor | factor
+factor ::= "(" arithmetic_expression ")" | identifier
+iostmt ::= "read" "(" identifier ")" | "write" "(" identifier ")"
+ifstmt ::= "if" condition "[" stmtlist "]" ["else" "[" stmtlist "]"]
+loopstmt ::= "while" condition "[" stmtlist "]"
+relational_expression ::= expression relational_op expression
+logical_expression ::= [!] [relational_expression logical_op] relational_expression
+logical_op ::= "||" | "&&"
+relational_op ::= "<" | "<=" | "==" | ">=" | ">" | "!="

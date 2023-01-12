@@ -1,0 +1,99 @@
+input stack:
+['$', 'd', 'b', 'c', 'a']
+work stack:
+['$', 'S']
+production string:
+[]
+
+
+input stack:
+['$', 'd', 'b', 'c', 'a']
+work stack:
+['$', 'B', 'A']
+production string:
+[1]
+
+
+input stack:
+['$', 'd', 'b', 'c', 'a']
+work stack:
+['$', 'B', 'A', 'a']
+production string:
+[1, 3]
+
+
+input stack:
+['$', 'd', 'b', 'c']
+work stack:
+['$', 'B', 'A']
+production string:
+[1, 3]
+
+
+input stack:
+['$', 'd', 'b', 'c']
+work stack:
+['$', 'B', 'c']
+production string:
+[1, 3, 2]
+
+
+input stack:
+['$', 'd', 'b']
+work stack:
+['$', 'B']
+production string:
+[1, 3, 2]
+
+
+input stack:
+['$', 'd', 'b']
+work stack:
+['$', 'B', 'b']
+production string:
+[1, 3, 2, 5]
+
+
+input stack:
+['$', 'd']
+work stack:
+['$', 'B']
+production string:
+[1, 3, 2, 5]
+
+
+input stack:
+['$', 'd']
+work stack:
+['$', 'd']
+production string:
+[1, 3, 2, 5, 4]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 3, 2, 5, 4]
+
+
+input stack:
+['$']
+work stack:
+['$']
+production string:
+[1, 3, 2, 5, 4]
+
+
+Parse tree with father-sibling relation:
+info | value | father | right sibling
+1 S 0 0
+2 A 1 3
+3 B 1 0
+4 "a" 2 5
+5 A 2 6
+6 "b" 3 7
+7 B 3 0
+8 "c" 5 0
+9 "d" 7 0

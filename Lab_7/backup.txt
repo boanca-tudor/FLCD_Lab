@@ -1,0 +1,37 @@
+    def createParseTree(self, productionString):
+        nodeStack = []
+        nodeList = []
+        productionIndex = 0
+        nodeNumber = 0
+        node = Node('S')
+        node.father = 0
+        node.sibling = 0
+        nodeNumber += 1
+        node.index = nodeNumber
+        nodeStack.append(node)
+        nodeList.append(node)
+        while productionIndex < len(productionString) and not len(nodeStack) == 0:
+            currentNode = nodeStack[-1]  # father of the current node
+            if currentNode.value in self.__grammar.get_terminals or currentNode.value == 'epsilon':
+                while len(nodeStack) > 0 and nodeStack[-1].sibling == 0:
+                    nodeStack.remove(nodeStack[-1])
+                if len(nodeStack) > 0:
+                    nodeStack.remove(nodeStack[-1])
+                else:
+                    break
+                continue
+            production = self.getProductionBasedOnNumber(productionString[productionIndex])
+
+            for i in range(0, len(production)):
+                child = Node(production[i])
+                child.father = currentNode.index
+                child.index = nodeNumber + i + 1
+                if i == len(production) - 1:
+                    child.sibling = 0
+                else:
+                    child.sibling = child.index + 1
+                nodeStack.append(child)
+                nodeList.append(child)
+            nodeNumber += len(production)
+            productionIndex += 1
+        return nodeList
